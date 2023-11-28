@@ -2,7 +2,7 @@
 def uppercase(str):
     newstring = ""
     for i in str:
-        if ord(str) >= 97 and ord(str) > 123:
+        if ord(i) >= 97 and ord(i) > 123:
             newstring += chr(ord(i) - 32)
         else:
             newstring += i
