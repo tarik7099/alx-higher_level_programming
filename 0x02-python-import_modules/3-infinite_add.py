@@ -12,5 +12,4 @@ if __name__ == "__main__":
                 number = number + int(sys.argv[j])
             else:
                 number += int(sys.argv[i]) + int(sys.argv[j])
-            
     print("{}".format(number))
