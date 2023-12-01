@@ -13,4 +13,4 @@ if __name__ == "__main__":
             else:
                 number += int(sys.argv[i]) + int(sys.argv[j])
             
-    print(number)
+    print("{}".format(number))
