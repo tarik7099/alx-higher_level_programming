@@ -2,9 +2,11 @@
 if __name__ == "__main__":
     import sys
     len1 = len(sys.argv)
-    if len1 - 1== 0: 
+    if len1 - 1== 0:
         print("{} arguments.".format(len1 - 1))
-    else:
+    elif len1 == 2:
+         print("{} argument:".format(len1 - 1))
+    elif len1 > 2:
          print("{} arguments:".format(len1 - 1))
     for i in range(len1):
             i += + 1
