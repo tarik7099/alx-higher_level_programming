@@ -22,3 +22,4 @@ def add_tuple(tuple_a=(), tuple_b=()):
     elif len(tuple_a) > 2 or len(tuple_b) > 2:
         tuple_a = tuple_a[:2]
         tuple_b = tuple_b[:2]
+        return tuple_a , tuple_b
