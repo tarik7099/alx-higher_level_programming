@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    
-    
-    if matrix and len(matrix) >= 3:
-        for i in range(3):
-            if len(matrix[i]) >= 3:
-                print("{:d} {:d} {:d}".format(matrix[i][0], matrix[i][1], matrix[i][2]))
-    else:
+    for row in matrix:
+        for i , column in enumerate(row):
+            print(column, end=" ")
+            if i != len(row) - 1:
+                print("", end="")
+            else:
+                print(column, end="")
         print()
