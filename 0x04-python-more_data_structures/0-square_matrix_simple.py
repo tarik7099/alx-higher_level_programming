@@ -8,4 +8,3 @@ def square_matrix_simple(matrix=[]):
             new_list.append(value)
         list1.append(new_list)
     return list1
-                
