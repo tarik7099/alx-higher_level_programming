@@ -8,5 +8,4 @@ def best_score(a_dictionary):
         if value > value1:
             value1 = value
             big = key
-    return big 
-    
+    return big
