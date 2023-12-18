@@ -1,10 +1,7 @@
 #!/usr/bin/python3
 def safe_print_integer(value):
-    try:
-        while value * 1 == value:
-            print("{%d}".format(value), end='')
-            return True
-        else:
-            return False
+    try:        
+        print("{%d}".format(value), end='')
+        return True
     except Exception as e:
-        pass
+        return False

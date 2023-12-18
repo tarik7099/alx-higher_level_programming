@@ -1,12 +1,16 @@
 #!/usr/bin/python3
 def safe_print_integer(value):
     try:
-        x = value
-        if x == value * 1:
-            print("{}".format(value))
+        if value == "{:d}".format(value):
             return True
+        else:
+            return False
+            #print("%d".format(value), end='')
+        
     except Exception as e:
-        return False
+        pass
+        
+
 #safe_print_integer = __import__('1-safe_print_integer').safe_print_integer
 
 value = 89
