@@ -2,12 +2,12 @@
 def safe_print_list_integers(my_list=[], x=0):
     try:
         i = 0
-        c = 0
+        cx = 0
         while i < x:
-            print(my_list[c], end='')
-            i += 1
+            print(my_list[i], end='')
+            cx += 1
     except (ValueError, TypeError):
         pass
-    c += 0
+    i += 0
     print()
-    return i
+    return cx
