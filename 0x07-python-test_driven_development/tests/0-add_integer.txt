@@ -1,0 +1,29 @@
+#!/usr/bin/python3
+
+import moudel:
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+test basic:
+
+    >>> add_integer(1, 2)
+    3
+
+one float test:
+
+    >>> add_integer(100.2)
+    198
+
+big number test:
+
+    >>> add_integer(100000000, 100000000)
+    200000000
+
+negative test:
+
+    >>> add_integer(100, -2)
+    98
+    
+no pass test:
+
+    >>> add_integer(0)
+    98
