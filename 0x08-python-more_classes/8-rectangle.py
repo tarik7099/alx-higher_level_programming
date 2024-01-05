@@ -73,5 +73,7 @@ class Rectangle:
         ara2 = rect_2.__width * rect_2.__height
         if (ara1) > (ara2):
             return rect_1
-        else:
+        elif (ara2) > (ara1):
             return rect_2
+        else:
+            return rect_1
