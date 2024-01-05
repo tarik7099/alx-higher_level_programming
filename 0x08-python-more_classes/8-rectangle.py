@@ -71,10 +71,8 @@ class Rectangle:
             raise TypeError("rect_2 must be an instance of Rectangle")
         ara1 = rect_1.__height * rect_1.__width
         ara2 = rect_2.__width * rect_2.__height
-        if (ara1) > (ara2):
+        if (ara1 >= ara2):
             return rect_1
-        elif (ara2) > (ara1):
-            return rect_2
         else:
-            return rect_1
+            rect_2
 
