@@ -58,7 +58,7 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        return (Rectangle(size, size))
+        return Rectangle(size, size)
 
     def __repr__(self):
         return (f"Rectangle({self.__width}, {self.__height})")
