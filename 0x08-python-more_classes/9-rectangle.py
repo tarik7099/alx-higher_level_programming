@@ -56,6 +56,14 @@ class Rectangle:
             Rectangle_str += str(self.print_symbol) * self.__width + "\n"
         return (Rectangle_str.strip("\n"))
 
+    @classmethod
+    def square(cls, size=0):
+        """Return a new Rectangle with width and height equal to size.
+
+        Args:
+            size (int): The width and height of the new Rectangle.
+        """
+        return (Rectangle(size, size))
     def __repr__(self):
         return (f"Rectangle({self.__width}, {self.__height})")
 
@@ -78,11 +86,3 @@ class Rectangle:
         else:
             return rect_1
 
-    @classmethod
-    def square(cls, size=0):
-        """Return a new Rectangle with width and height equal to size.
-
-        Args:
-            size (int): The width and height of the new Rectangle.
-        """
-        return (Rectangle(size, size))
