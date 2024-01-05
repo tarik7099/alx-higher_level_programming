@@ -56,9 +56,6 @@ class Rectangle:
             Rectangle_str += str(self.print_symbol) * self.__width + "\n"
         return (Rectangle_str.strip("\n"))
 
-    @classmethod
-    def square(cls, size=0):
-        return Rectangle(size, size)
 
     def __repr__(self):
         return (f"Rectangle({self.__width}, {self.__height})")
@@ -73,7 +70,13 @@ class Rectangle:
             raise TypeError("rect_1 must be an instance of Rectangle")
         if not isinstance(rect_2, Rectangle):
             raise TypeError("rect_2 must be an instance of Rectangle")
-        if (rect_1.area() >= rect_2.area()):
+        ara1 = rect_1.__height * rect_1.__width
+        ara2 = rect_2.__width * rect_2.__height
+        if (ara1 >= ara2):
             return rect_1
         else:
             rect_2
+
+    @classmethod
+    def square(cls, size=0):
+        return Rectangle(size, size)

@@ -1,14 +1,20 @@
-#!/usr/bin/python3
+# 0-add_integer.txt
+================================
+how to use 0-add_integer.python
+================================
 
+Write a function that adds 2 integers.
+
+Usage "0-add_integer.py"
 import moudel:
     >>> add_integer = __import__('0-add_integer').add_integer
 
-test basic:
+test basic add two integer:
 
     >>> add_integer(1, 2)
     3
 
-one float test:
+pass one float test:
 
     >>> add_integer(100.2)
     198
@@ -27,3 +33,55 @@ no pass test:
 
     >>> add_integer(0)
     98
+
+pass to float:
+
+    >>> add_integer(100.2 , 2.2)
+    102
+
+pass string:
+
+
+    >>> add_integer("test", "hello")
+    Traceback (most recent call last):
+    ... 
+    TypeError: a must be an integer or float
+
+no pass:
+
+    >>> add_integer(None)
+    Traceback (most recent call last):
+    ... 
+    TypeError: a must be an integer or float
+
+
+erro convert text to float:
+
+    >>> add_integer(float("NaN"), 4)
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float NaN to integer
+
+
+test one char:
+    >>> add_integer('a', 4)
+    Traceback (most recent call last):
+    ... 
+    TypeError: a must be an integer or float
+
+
+no pass arguements:
+
+    >>> add_integer()
+    Traceback (most recent call last):
+    ... 
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+
+pass with space:
+
+    >>> add_integer("")
+    Traceback (most recent call last):
+    ... 
+    TypeError: a must be an integer or float
+    
