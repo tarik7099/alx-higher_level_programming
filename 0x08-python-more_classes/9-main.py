@@ -1,5 +1,4 @@
-[2:54 am, 06/01/2024] tarik khadri: mzal kn9lb
-[2:54 am, 06/01/2024] +212 614-492173: #!/usr/bin/python3
+#!/usr/bin/python3
 """Define a Rectangle class."""
 
 class Rectangle:
