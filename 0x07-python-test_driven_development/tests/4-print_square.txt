@@ -1,0 +1,42 @@
+imopt:
+    >>> print_square = __import__('4-print_square').print_square
+
+pass normal:
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+pass negative:
+    >>> print_square(-1)
+    Traceback (most recent call last):
+    ...
+    ValueError: size must be >= 0
+
+pass 0:
+    >>> print_square(0)
+    
+pass string:
+    >>> print_square("str")
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+no pass:
+    >>> print_square()
+    Traceback (most recent call last):
+    ...
+    TypeError: print_square() missing 1 required positional argument: 'size'
+
+pass 2 argument:
+    >>> print_square([])
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+big number:
+    >>> print_square(1233222222222222222)
+    Traceback (most recent call last):
+    ...
+    MemoryError

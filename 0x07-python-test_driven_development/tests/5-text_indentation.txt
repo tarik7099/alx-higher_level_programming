@@ -1,0 +1,55 @@
+imopt:
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+no str:
+    >>> text_indentation()
+    Traceback (most recent call last):
+    ...
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+no pass arguments:
+    >>> text_indentation("loren tesst no point no question mark no 2 point")
+    loren tesst no point no question mark no 2 point
+
+pass 2 point:
+    >>> text_indentation("..")
+    .
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+
+pass 2 quest:
+    >>> text_indentation("??")
+    ?
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+
+pass 2 kik:
+    >>> text_indentation(":")
+    :
+    <BLANKLINE>
+
+pass all args:
+    >>> text_indentation(".?:")
+    .
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+
+pass int:
+    >>> text_indentation(2)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+ 
+pass no stro:
+    >>> text_indentation("")
+
+
+
+
+
+
