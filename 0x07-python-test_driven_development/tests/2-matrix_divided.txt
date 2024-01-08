@@ -73,3 +73,11 @@ big :
 float:
     >>> matrix_divided([[2, 4, 5.45454]], 2.343)
     [[0.85, 1.71, 2.33], []]
+
+
+
+str megre:
+    >>> matrix_divided(["[2, 4, 6]",[5, 8, 9]], 0)
+    Traceback (most recent call last):
+      ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
