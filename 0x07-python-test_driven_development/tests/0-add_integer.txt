@@ -63,6 +63,15 @@ no pass:
     ... 
     TypeError: a must be an integer
 
+no pass:
+
+    >>> add_integer(None, "tarol")
+    Traceback (most recent call last):
+    ... 
+    TypeError: a must be an integer
+
+
+
 
 no pass:
 
