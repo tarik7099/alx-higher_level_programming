@@ -63,9 +63,9 @@ no pass1 :
     TypeError: b must be an integer
 
 
-no pass2:
+no pass sny st:
 
-    >>> add_integer("hello" , 3.0)
+    >>> add_integer("aa" , 3.0)
     Traceback (most recent call last):
     ... 
     TypeError: a must be an integer
@@ -79,12 +79,21 @@ no pass3:
 
 
 
-no pass:
+no pass3:
 
-    >>> add_integer(None)
+    >>> add_integer(None, "tarol")
     Traceback (most recent call last):
     ... 
     TypeError: a must be an integer
+
+
+
+no pass:
+
+    >>> add_integer("tarol", None)
+    Traceback (most recent call last):
+    ... 
+    TypeError: b must be an integer
 
 
 no pass7:
