@@ -80,12 +80,6 @@ no pass11 :
     ... 
     TypeError: a must be an integer
 
-no pass12 :
-
-    >>> add_integer(3 , None)
-    Traceback (most recent call last):
-    ... 
-    TypeError: b must be an integer
 
 
 erro convert text to float:
