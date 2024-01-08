@@ -70,14 +70,6 @@ no pass sny st:
     ... 
     TypeError: a must be an integer
 
-no pass3:
-
-    >>> add_integer(None, "tarol")
-    Traceback (most recent call last):
-    ... 
-    TypeError: a must be an integer
-
-
 
 no pass3:
 
@@ -93,17 +85,7 @@ no pass:
     >>> add_integer("tarol", None)
     Traceback (most recent call last):
     ... 
-    TypeError: b must be an integer
-
-
-no pass7:
-
-    >>> add_integer("tarik",None)
-    Traceback (most recent call last):
-    ... 
     TypeError: a must be an integer
-
-
 
 
 erro convert text to float:
