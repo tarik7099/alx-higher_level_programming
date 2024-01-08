@@ -87,7 +87,7 @@ no pass:
     TypeError: a must be an integer
 
 
-no pass:
+no pass7:
 
     >>> add_integer("tarik",None)
     Traceback (most recent call last):
