@@ -70,7 +70,7 @@ no pass:
     >>> add_integer("tarik",None)
     Traceback (most recent call last):
     ... 
-    TypeError: b must be an integer
+    TypeError: a must be an integer
 
 
 
