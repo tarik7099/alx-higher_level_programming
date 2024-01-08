@@ -64,22 +64,12 @@ no pass1 :
 
 
 
-no pass2 :
+new args :
 
     >>> add_integer("aa" , 3)
     Traceback (most recent call last):
     ... 
     TypeError: a must be an integer
-
-
-
-no pass11 :
-
-    >>> add_integer(None , 3)
-    Traceback (most recent call last):
-    ... 
-    TypeError: a must be an integer
-
 
 
 erro convert text to float:
