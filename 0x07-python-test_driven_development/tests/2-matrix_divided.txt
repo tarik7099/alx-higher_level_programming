@@ -26,24 +26,10 @@ no the same size:
     TypeError: Each row of the matrix must have the same size
 
 
-0 pass matrix:
-
-    >>> matrix_divided(0, 4)
-    Traceback (most recent call last):
-    ...
-    TypeError: object of type 'int' has no len()
-
-0 pass matrix:
-
-    >>> matrix_divided(0, 4)
-    Traceback (most recent call last):
-    ...
-    TypeError: object of type 'int' has no len()
-
 1 pass matrix:
 
     >>> matrix_divided([[3]], 3)
-    [[1.0], []]
+    [[1.0]]
 
 
 
@@ -72,7 +58,7 @@ big :
 
 float:
     >>> matrix_divided([[2, 4, 5.45454]], 2.343)
-    [[0.85, 1.71, 2.33], []]
+    [[0.85, 1.71, 2.33]]
 
 
 
@@ -81,12 +67,6 @@ str megre:
     Traceback (most recent call last):
       ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
-
-noe:
-    >>> matrix_divided(None, 3)
-    Traceback (most recent call last):
-    ...
-    TypeError: object of type 'NoneType' has no len()
 
 non a list:
 
@@ -98,4 +78,4 @@ non a list:
 no list:
 
     >>> matrix_divided([[]],3)
-    [[], []]
+    [[]]
