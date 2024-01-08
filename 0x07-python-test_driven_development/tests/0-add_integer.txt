@@ -76,7 +76,7 @@ erro convert text to float:
 
 
 test one char:
-    >>> add_integer('a', 4)
+    >>> add_integer("aa", 4)
     Traceback (most recent call last):
     ... 
     TypeError: a must be an integer
