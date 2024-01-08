@@ -3,7 +3,6 @@
 
 """Write a function that prints a text with 2"""
 
-
 def text_indentation(text):
     """
     Prints text with indentation after encountering certain punctuation marks.
