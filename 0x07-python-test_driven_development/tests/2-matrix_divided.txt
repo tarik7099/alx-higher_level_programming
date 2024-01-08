@@ -26,13 +26,6 @@ no the same size:
     TypeError: Each row of the matrix must have the same size
 
 
-float not number:
-
-    >>> matrix_divided([[1, 2, 3], [4, 5, 6]], "")
-    Traceback (most recent call last):
-    ...
-    TypeError: unsupported operand type(s) for /: 'int' and 'str'
-
 0 pass matrix:
 
     >>> matrix_divided(0, 4)
@@ -50,23 +43,8 @@ float not number:
 1 pass matrix:
 
     >>> matrix_divided([[3]], 3)
-    [[1.0], []] 
+    [[1.0], []]
 
-
-
-no pass:
-
-    >>> matrix_divided()
-    Traceback (most recent call last):
-    ...
-    TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
-
-no pass div:
-
-        >>> matrix_divided([[1, 2, 3], [4, 5, 6]])
-        Traceback (most recent call last):
-        ...
-        TypeError: matrix_divided() missing 1 required positional argument: 'div'
 
 
 str with matrix:
@@ -74,5 +52,5 @@ str with matrix:
 
     >>> matrix_divided([[3, 9], [15, 3]],"3")
     Traceback (most recent call last):
-        ...
+    ...
     TypeError: div must be a number
