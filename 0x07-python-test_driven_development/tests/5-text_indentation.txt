@@ -60,5 +60,5 @@ number :
 new line:
     >>> text_indentation("A sneaky \n new line.")
     A sneaky
-    new line.
+     new line.
     <BLANKLINE>
