@@ -62,3 +62,6 @@ erro convert text to float:
     ...
     ValueError: cannot convert float NaN to integer
 
+negative :
+    >>> add_integer(-2, -3)
+    -5
