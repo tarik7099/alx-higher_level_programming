@@ -4,7 +4,6 @@
 This module provides a function to add two numbers and return their sum.
 """
 
-
 def matrix_divided(matrix, div):
     """
     Divides each element in a matrix by a given number.
