@@ -87,3 +87,15 @@ noe:
     Traceback (most recent call last):
     ...
     TypeError: object of type 'NoneType' has no len()
+
+non a list:
+
+    >>> matrix = "not a list"
+    >>> print(matrix_divided(matrix, 3))
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+no list:
+
+    >>> matrix_divided([[]],3)
+    [[], []]
