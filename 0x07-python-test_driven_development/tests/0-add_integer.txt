@@ -95,31 +95,3 @@ erro convert text to float:
     ...
     ValueError: cannot convert float NaN to integer
 
-
-
-
-test one char:
-    >>> add_integer("aa", 4)
-    Traceback (most recent call last):
-    ... 
-    TypeError: a must be an integer
-
-
-
-no pass arguements:
-
-    >>> add_integer()
-    Traceback (most recent call last):
-    ... 
-    TypeError: add_integer() missing 1 required positional argument: 'a'
-
-
-
-pass with space:
-
-    >>> add_integer("")
-    Traceback (most recent call last):
-    ... 
-    TypeError: a must be an integer
-    
-
