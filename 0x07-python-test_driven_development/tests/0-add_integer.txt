@@ -64,6 +64,15 @@ no pass:
     TypeError: a must be an integer
 
 
+no pass:
+
+    >>> add_integer("tarik",None)
+    Traceback (most recent call last):
+    ... 
+    TypeError: b must be an integer
+
+
+
 
 erro convert text to float:
 
