@@ -40,6 +40,18 @@ float not number:
     ...
     TypeError: object of type 'int' has no len()
 
+0 pass matrix:
+
+    >>> matrix_divided(0, 4)
+    Traceback (most recent call last):
+    ...
+    TypeError: object of type 'int' has no len()
+
+1 pass matrix:
+
+    >>> matrix_divided([[3]], 3)
+    [[1.0], []] 
+
 no pass:
 
     >>> matrix_divided()

@@ -8,11 +8,11 @@ Usage "0-add_integer.py"
 import moudel:
     >>> add_integer = __import__('0-add_integer').add_integer
 
-Test basic addition of two integers:
+Test basic addition:
     >>> add_integer(1, 2)
     3
 
-Passing a float defaults the second number to 98:
+Passing a float defaults:
     >>> add_integer(100.2)
     198
 
@@ -24,7 +24,7 @@ Adding a negative number:
     >>> add_integer(100, -2)
     98
 
-Passing no second number defaults to 98:
+Passing no second:
     >>> add_integer(0)
     98
 
@@ -32,19 +32,19 @@ Adding two floats:
     >>> add_integer(100.2, 2.2)
     102
 
-Passing strings should raise TypeError:
+Passing tow str:
     >>> add_integer("test", "hello")
     Traceback (most recent call last):
     ... 
     TypeError: a must be an integer
 
-Passing a string and an integer should raise TypeError:
+Passing one int:
     >>> add_integer(3, "hello")
     Traceback (most recent call last):
     ... 
     TypeError: b must be an integer
 
-Trying to convert text to float should raise ValueError:
+Trying NaN:
     >>> add_integer(float("NaN"), 4)
     Traceback (most recent call last):
     ...
