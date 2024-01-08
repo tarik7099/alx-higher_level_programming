@@ -49,4 +49,5 @@ no:
 floeat:
     >>> print_square(5.5)
     Traceback (most recent call last):
+    ...
     TypeError: size must be an integer
