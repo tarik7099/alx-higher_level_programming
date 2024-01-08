@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 print_square = __import__('4-print_square').print_square
 
-print_square(400000000000000000000)
+print_square("str")
 print("")
 print_square(10)
 print("")

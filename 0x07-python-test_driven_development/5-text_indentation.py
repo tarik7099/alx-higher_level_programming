@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 """Write a function that prints a text with 2"""
 
 
@@ -19,5 +20,5 @@ def text_indentation(text):
         print(char, end='')
         if char in (".", "?", ":"):
             print("\n")
-        elif char == '\n':
+        elif char == ' ':
             print(end='')
