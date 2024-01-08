@@ -29,7 +29,8 @@ def matrix_divided(matrix, div):
         for value in row:
             if not isinstance(value, (int, float)):
                 raise TypeError("matrix must be a matrix (list of lists) of "
-                        "integers/floats")
+                                "integers/floats")
+
             if value == 0:
                 raise ZeroDivisionError("division by zero")
             new_value = round(value / div, 2)
