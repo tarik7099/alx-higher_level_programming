@@ -63,12 +63,15 @@ no pass1 :
     TypeError: b must be an integer
 
 
+
 no pass2 :
 
     >>> add_integer("aa" , 3)
     Traceback (most recent call last):
     ... 
     TypeError: a must be an integer
+
+
 
 no pass11 :
 
