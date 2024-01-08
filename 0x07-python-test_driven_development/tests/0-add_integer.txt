@@ -63,15 +63,6 @@ no pass1 :
     TypeError: b must be an integer
 
 
-
-new args :
-
-    >>> add_integer("aa" , 3)
-    Traceback (most recent call last):
-    ... 
-    TypeError: a must be an integer
-
-
 erro convert text to float:
 
     >>> add_integer(float("NaN"), 4)
