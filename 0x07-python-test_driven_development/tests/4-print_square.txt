@@ -35,8 +35,12 @@ pass 2 argument:
     ...
     TypeError: size must be an integer
 
-big number:
-    >>> print_square(1233222222222222222)
+not  int:
+    >>> print_square(-7.5)
     Traceback (most recent call last):
-    ...
-    MemoryError
+    TypeError: size must be an integer
+
+no:
+    >>> print_square(None)
+    Traceback (most recent call last):
+    TypeError: size must be an integ
