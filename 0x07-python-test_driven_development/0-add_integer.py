@@ -3,13 +3,17 @@
 
 def add_integer(a, b=98):
     """
-    Adds tow numbers,a and b
+    Adds two numbers, a and b.
 
-    args:
-    a int
-    b int
+    Args:
+    a (int or float): First number.
+    b (int or float, optional): Second number. Defaults to 98.
+
     Returns:
-    int: The addition of a and b as an integer.    
+    int: The addition of a and b as an integer.
+    
+    Raises:
+    TypeError: If a or b is not an integer or float.
     """
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer or float")
