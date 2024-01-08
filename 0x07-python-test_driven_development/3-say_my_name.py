@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+
+"""Write a function that prints My name """
+
+
 def say_my_name(first_name, last_name=""):
     """
     Prints the name based on given first and last names.
