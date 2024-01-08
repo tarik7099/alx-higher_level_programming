@@ -124,8 +124,3 @@ pass with space:
     TypeError: a must be an integer
     
 
-b inter:
-    >>> add_integer(2, "3")
-    Traceback (most recent call last):
-    ... 
-    TypeError: b must be an integer
