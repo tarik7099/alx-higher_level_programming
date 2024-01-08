@@ -74,3 +74,9 @@ str with matrix:
     Traceback (most recent call last):
         ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+div str:
+    >>> matrix_divided([[2, 4, 6],[5, 8, 9]], 2)
+    Traceback (most recent call last):
+      ...
+    TypeError: div must be a number
