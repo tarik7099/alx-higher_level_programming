@@ -72,3 +72,15 @@
     >>> my_list = MyList([-100, -98, -23, 0, -23, -123])
     >>> my_list.print_sorted()
     [-123, -100, -98, -23, -23, 0]
+
+
+::
+    >>> my_list = MyList([-10, 0, 1, 2, 10, 20, 100])
+    >>> my_list.print_sorted()
+    [-10, 0, 1, 2, 10, 20, 100]
+
+::
+    >>> my_list = MyList()
+    >>> my_list.append(20)
+    >>> my_list
+    [20]
