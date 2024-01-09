@@ -24,6 +24,20 @@
     TypeError: list expected at most 1 argument, got 2
 
 ::
+    >>> my_list = MyList([2, 10, 1, -5, 30, 90, 0])
+    >>> my_list.print_sorted()
+    [-5, 0, 1, 2, 10, 30, 90]
+    >>> my_list
+    [2, 10, 1, -5, 30, 90, 0]
+
+
+
+
+
+
+
+
+::
 
     >>> my_list = MyList()
     >>> my_list.append(1)
