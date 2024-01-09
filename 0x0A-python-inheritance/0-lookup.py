@@ -8,6 +8,4 @@ def lookup(obj):
     Args:
     obj: An object to inspect.
     """
-    list = []
-    list.append(dir(obj))
-    return list
+    return dir(obj)
