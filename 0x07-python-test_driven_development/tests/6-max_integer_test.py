@@ -19,6 +19,13 @@ class TestMaxInteger(unittest.TestCase):
     def testzero(self):
         self.assertEqual(max_integer([-1, -6, -70, 0]), 0)
 
+    def test_unordered(self):
+        self.assertEqual(max_integer([1, 2, 4, 3]), 4)
+
+    def test_max_at_begg(self):
+        self.assertEqual(max_integer(4, 3, 2, 1), 4)
+
+
     def test_duplicate_values(self):
         """double """
         self.assertEqual(max_integer([1, 1, 1, 1]), 1)
