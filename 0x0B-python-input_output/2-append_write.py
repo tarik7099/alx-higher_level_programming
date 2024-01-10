@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+""" read file """
+
+
 def append_write(filename="", text=""):
     """
     Append a string to the end
