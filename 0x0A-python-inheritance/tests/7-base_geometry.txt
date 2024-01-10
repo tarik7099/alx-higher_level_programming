@@ -1,0 +1,87 @@
+import:
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+::
+    >>> bG = BaseGeometry()
+    typr(bG)
+    <class '7-base_geometry.BaseGeometry'>
+
+
+::
+    >>> bg.integer_validator("invalid number", "number")
+    TypeError('invalid number must be an integer')
+
+::
+
+    >>> bG.integer_validator("invalid int", -1)
+    ValueError('invalid int must be greater than 0')
+
+::
+
+    >>> bG.integer_validator("invalid int", 0)
+    ValueError('invalid int must be greater than 0')
+
+::
+
+    >>> bG.integer_validator() # doctest: +NORMALIZE_WHITESPACE
+    Traceback (most recent call last):
+    TypeError: integer_validator() missing 2 required positional arguments: 
+    'name' and 'value'
+
+
+:: 
+
+    >>> bG = BaseGeometry(None)
+    Traceback (most recent call last):
+    TypeError: BaseGeometry() takes no arguments
+
+::
+>>> bg.area()
+    Traceback (most recent call last):
+    Exception: area() is not implemented
+
+::
+
+    >>> bG.integer_validator("invalid tuple", (1,))
+    TypeError('invalid tuple must be an integer')
+
+::
+
+    >>> bG.integer_validator("and another", [3])
+    TypeError('and another must be an integer')
+
+
+::
+
+    >>> bG.integer_validator("more invalid testing", {3, 4})
+    TypeError('more invalid testing must be an integer')
+
+
+::
+    >>> bG = BaseGeometry()
+    >>> print(bG.area) # doctest: +ELLIPSIS, +NORMALIZE_WHITESPACE
+    <bound method BaseGeometry.area of <7-base_geometry.BaseGeometry 
+     object at...>>
+
+::  
+    >>> bG.integer_validator("another invalid", True)
+    TypeError('another invalid must be an integer')
+
+
+::
+
+    >>> bG.integer_validator("absolutely every possible invalid", None)
+    TypeError('absolutely every possible invalid must be an integer')
+
+
+::
+
+    >>> bG.integer_validator(None) # doctest: +NORMALIZE_WHITESPACE
+    Traceback (most recent call last):
+    TypeError: integer_validator() missing 1 required positional argument: 
+    'value'
+
+::
+
+    >>> bG.integer_validator({"a": 1}, (1, 2))
+    TypeError("{'a': 1} must be an integer")
