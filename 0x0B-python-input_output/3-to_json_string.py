@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """ read file """
 
+import json
+
 
 def to_json_string(my_obj):
-    import json
-
     """
     Returns the JSON representation
 
