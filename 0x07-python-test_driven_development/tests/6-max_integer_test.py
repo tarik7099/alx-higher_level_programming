@@ -30,3 +30,5 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([1, 3.5, 3, 4]), 4)
         self.assertEqual(max_integer([-1, -2.5, -3, -4]), -1)
 
+if __name__ == '__main__':
+    unittest.main()
