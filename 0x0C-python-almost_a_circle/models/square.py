@@ -49,7 +49,11 @@ class Square(Rectangle):
             **kwargs: Arbitrary keyword arguments.
         """
         attributs = ["id", "width", "height", "x", "y"]
-        if args:
+        if len(args) == 0:
+            for key, val in kwargs.items():
+                self.__setattr__(key, val)
+            return
+        elif args:
             for x in range(0, len(args)):
                 setattr(self, attributs[x], args[x])
         else:
