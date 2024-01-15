@@ -19,11 +19,11 @@ class Rectangle(Base):
             y (int): The y-coordinate of the rectangle.
             id (int): The ID of the rectangle.
         """
-        super().__init__(id)
         self.width = width
         self.height = height
         self.x = x
         self.y = y
+        super().__init__(id)
 
     @property
     def width(self):
@@ -95,7 +95,8 @@ class Rectangle(Base):
 
     def __str__(self):
         """String representation of the rectangle."""
-        return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
+        return (f"[Rectangle] ({self.id}) "
+        f"{self.__x}/{self.__y} - {self.__width}/{self.__height}")
 
     def update(self, *args, **kwargs):
         """
@@ -126,3 +127,4 @@ class Rectangle(Base):
         for i in range(len(attrib)):
             rectangle_dict[attrib[i]] = values[i]
         return rectangle_dict
+
