@@ -97,12 +97,11 @@ class Base:
             list: List of instances.
         """
         filename = f"{cls.__name__}.json"
-
-        with open(filename, 'r') as file:
-            json_content = file.read()
-
-            list_dicts = cls.from_json_string(json_content)
-
-            instances = [cls.create(**d) for d in list_dicts]
-
+        try:
+            with open(filename, 'r') as file:
+                json_content = file.read()
+                list_dicts = cls.from_json_string(json_content)
+                instances = [cls.create(**d) for d in list_dicts]
             return instances
+        except FileNotFoundError:
+            return []
