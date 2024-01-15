@@ -99,8 +99,9 @@ class Rectangle(Base):
 
     def __str__(self):
         """String representation of the rectangle."""
-        return (f"[Rectangle] ({self.id}) "
-        f"{self.__x}/{self.__y} - {self.__width}/{self.__height}")
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
+                                                       self.x, self.y,
+                                                       self.width, self.height)
 
     def update(self, *args, **kwargs):
         """
@@ -131,4 +132,3 @@ class Rectangle(Base):
         for i in range(len(attrib)):
             rectangle_dict[attrib[i]] = values[i]
         return rectangle_dict
-
