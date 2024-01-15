@@ -3,7 +3,7 @@
 """This module defines the Base class."""
 
 import json
-import pycodestyle
+
 
 class Base:
     """Base class for handling objects."""
@@ -15,7 +15,7 @@ class Base:
         Initialize a new instance of the Base class.
 
         Args:
-            id (int): The ID for the new instance. If None, it will be auto-generated.
+            id (int)
         """
         if id is not None:
             self.id = id
