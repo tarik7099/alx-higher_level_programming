@@ -51,8 +51,7 @@ class Square(Rectangle):
         attributs = ["id", "width", "height", "x", "y"]
         if args:
             for x in range(0, len(args)):
-               self. __setattr__(attributs[x], args[x])
+                setattr(self, attributs[x], args[x])
         else:
             for key, value in kwargs.items():
-                self.__setattr__(key, value)
-
+                setattr(self, key, value)
