@@ -7,10 +7,10 @@ import sys
 if __name__ == "__main__":
     db = MySQLdb.connect(host="localhost", user=sys.argv[1],
                          passwd=sys.argv[2], db=sys.argv[3], port=3306)
-    cr = db.cursor()
-    cr.execute("SELECT * FROM states")
-    states = cr.fetchall()
-    for row in states:
+    cur = db.cursor()
+    cur.execute("SELECT * FROM states")
+    rows = cur.fetchall()
+    for row in rows:
         print(row)
-    cr.close()
+    cur.close()
     db.close()
