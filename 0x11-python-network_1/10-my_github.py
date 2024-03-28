@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-"""Sends a search request for a given string to the Star Wars API.
-
-Usage: ./9-starwars.py <search string>
-  - The search request is sent to the Star Wars API search people endpoint.
+"""
+Sends a search request for a given string to the Star Wars API.
 """
 import sys
 import requests

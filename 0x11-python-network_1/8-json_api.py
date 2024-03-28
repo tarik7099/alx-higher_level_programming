@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Sends a POST request to http://0.0.0.0:5000/search_user with a given letter.
+"""
 import requests
 import sys
 
