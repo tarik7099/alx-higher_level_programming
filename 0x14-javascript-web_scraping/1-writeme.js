@@ -1,16 +1,9 @@
 #!/usr/bin/node
-
 const fs = require('fs');
-
-// Extract command line arguments
-const [, , filePath, content] = process.argv;
-
-// Write the content to the file
-fs.writeFile(filePath, content, 'utf-8', (err) => {
+const file = process.argv[2];
+const content = process.argv[3];
+fs.writeFile(file, content, 'utf-8', function (err) {
   if (err) {
-    // If an error occurred during writing, print the error object
-    console.error(err);
-  } else {
-    console.log(`Content has been written to ${filePath}`);
+    console.log(err);
   }
 });
